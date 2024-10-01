@@ -1,0 +1,12 @@
+<div class="row justify-content-center">
+    <div class="col-12 col-md-6 mb-3">
+        <h2 class="text-center">Pacientes Masculinos</h2>
+            <ul class="list-group">
+                {{#each masculinos}}
+                <li class="list-group-item">
+                    {{add @index 1}}. Paciente: {{this.nombre}} {{this.apellido}} - Genero: {{this.genero}} - Id: {{this.id}} - Fecha: {{this.fecha}}
+                </li>
+                {{/each}}
+            </ul>
+    </div>
+</div>

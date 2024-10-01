@@ -1,0 +1,13 @@
+<div>
+    {{#if pacientes}}
+        <ul class="list-group">
+            {{#each pacientes}}
+                <li class="list-group-item">
+                    {{add @index 1}}. Paciente: {{this.nombre}} {{this.apellido}} - Genero: {{this.genero}} - Id: {{this.id}} - Fecha: {{this.fecha}}
+                </li>
+            {{/each}}
+        </ul>
+    {{else}}
+        <p>No se han generado pacientes.</p>
+    {{/if}}
+</div>

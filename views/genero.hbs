@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <title>DENDE Spa</title>
+</head>
+<body class="bg-dark text-light">
+<header>
+    {{>navbar}}
+</header>
+
+<section class="container my-5">
+    <div class="text-center">
+        <h1>Pacientes por Genero</h1>
+    </div>
+    <div>
+        <div class="py-4">
+            <h2 class="text-center">Elija Filtro:</h1>
+            <div class="py-4">
+                {{>generoOption}}
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
